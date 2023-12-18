@@ -10,10 +10,10 @@ st.sidebar.title("WhatsInsight")
 uploadedfile = st.sidebar.file_uploader("Choose a File")
 df = pd.DataFrame()
 
-    if uploadedfile != None:
-        bytes_data = uploadedfile.getvalue()
-        data = bytes_data.decode("utf-8")
-        df = processdata.process(data)
+if uploadedfile != None:
+    bytes_data = uploadedfile.getvalue()
+    data = bytes_data.decode("utf-8")
+    df = processdata.process(data)
 
     Userlist = df['User'].unique().tolist()
     Userlist.sort()
