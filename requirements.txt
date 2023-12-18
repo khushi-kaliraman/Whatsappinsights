@@ -1,0 +1,8 @@
+pandas
+streamlit
+matplot
+seaborn
+nltk
+URLExtract
+WordCloud
+
